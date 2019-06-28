@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="设备使用频率"
+            android:paddingTop="12dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginStart="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_1"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp" />
+
+        <Spinner
+            android:id="@+id/spinner_2"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <com.jn.chart.charts.LineChart
+        android:id="@+id/lineChart1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="50dp" />
+
+    <!--<com.jn.chart.charts.LineChart-->
+    <!--android:id="@+id/lineChart2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"/>-->
+
+    <!--<com.jn.chart.charts.LineChart-->
+    <!--android:id="@+id/lineChart3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"/>-->
+</LinearLayout>

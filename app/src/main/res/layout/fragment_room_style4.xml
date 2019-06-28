@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:layout_width="250dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:text="Android高级程序设计"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:paddingTop="12dp"/>-->
+
+            <!--<Spinner-->
+                <!--android:id="@+id/spinner"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="left"-->
+                <!--tools:ignore="RtlHardcoded" />-->
+        <!--</LinearLayout>-->
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_centerInParent="true"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:layout_row="0"
+            android:padding="6dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="ObsoleteLayoutParam">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.jn.chart.charts.PieChart
+                    android:id="@+id/pieChart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp" />
+
+                <TextView
+                    android:id="@+id/tv_room1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="空气质量及格率"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</FrameLayout>

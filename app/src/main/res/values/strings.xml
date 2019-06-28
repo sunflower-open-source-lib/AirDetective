@@ -1,0 +1,15 @@
+<resources>
+
+    <string-array name="room_style">
+        <item>户型1</item>
+        <item>户型2</item>
+        <item>户型3</item>
+        <item>户型4</item>
+    </string-array>
+
+    <string name="app_name">空气质量监控</string>
+    <string name="home">家庭</string>
+    <string name="model">模块</string>
+    <string name="message">我的</string>
+    <string name="password">密码</string>
+</resources>

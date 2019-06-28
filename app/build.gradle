@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+
+    defaultConfig {
+        applicationId "com.example.administrator.airdetective"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.leon:lsettingviewlibrary:1.5.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.blankj:utilcode:1.6.4'
+    implementation 'com.wang.avi:library:2.1.3'
+//    api 'com.squareup.okhttp3:okhttp:3.7.0'
+    api 'com.google.code.gson:gson:2.8.0'
+    api 'com.android.support:design:28.0.0'
+    api 'de.hdodenhof:circleimageview:2.1.0'
+    api 'com.github.bumptech.glide:glide:3.7.0'
+    api 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    api files('libs/realm-android-0.87.5.jar')
+    api project(path: ':JNChartLib')
+    api 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.8@aar'
+    api 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+}
